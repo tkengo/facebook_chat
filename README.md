@@ -52,7 +52,7 @@ access_token = '****' # message sender's facebook access token
 cilent = FacebookChat::Client.new(access_token)
 
 to = '1000000000' # facebook user id you want to send a message
-client(to, "hey, what's up?")
+client.send(to, "hey, what's up?")
 ```
 
 you can notice that a message is sent to the user who have id `1000000000`.
