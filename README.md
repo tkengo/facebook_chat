@@ -24,7 +24,11 @@ $ gem install facebook_chat
 
 ## Usage
 
-### Configure
+### Preparation
+
+Your facebook application should have `xmpp_login` permission to send a chat message. Please set `xmpp_login` permission in your application before go to next step.
+
+### Configuration
 
 First, you have to configure to Facebook Chat API Client.
 
@@ -38,6 +42,8 @@ FacebookChat::Client.configure do |config|
   config.host = 'chat.facebook.com' # you can omit this line. Default host value is 'chat.facebook.com'
 end
 ```
+
+### Send a message
 
 And then, create `FacebookChat::Client` instance and call `send` method.
 
